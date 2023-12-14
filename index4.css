@@ -1,0 +1,45 @@
+.timeline{
+    margin-top: 50px;
+}
+.timeline .items{
+    border-top: 3px solid gray;
+}
+.timeline .items .items-list{
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    margin-right: 0px;
+}
+.timeline .items .items-list::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    border-right: 2px dashed gray;
+    height: 35px;
+}
+.event-date{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    position: absolute;
+    top: -90px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+@media only screen and (max-width:768px){
+    .event-date{
+        top: -50px;
+    }
+    .timeline .items{
+        border: none;
+    }
+    .timeline .items .items-list{
+        margin-top: 100px;
+    }
+    .timeline .items .items-list::before{
+    }
+}
